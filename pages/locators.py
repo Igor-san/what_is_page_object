@@ -1,5 +1,8 @@
 from selenium.webdriver.common.by import By
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
 class MainPageLocators():
     # локаторы для MainPage
@@ -18,3 +21,12 @@ class LoginPageLocators():
     REG_PASSWORD_INPUT = (By.CSS_SELECTOR, "#id_registration-password1")
     REG_PASSWORD_INPUT_REPEAT = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_BUTTON = (By.NAME, "registration_submit")
+
+class ProductPageLocators:
+    # локаторы для ProductPage
+    ADD_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, '.product_main > .price_color')
+    PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main > h1')
+    ADD_PRODUCT_NAME = (By.CSS_SELECTOR, "#messages .alertinner>strong")
+    ADD_PRODUCT_PRICE = (By.CSS_SELECTOR, '#messages >.alert:last-child > .alertinner > p:first-child > strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '#messages >.alert:first-child > .alertinner')
