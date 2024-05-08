@@ -1,2 +1,2 @@
-# what_is_page_object
-Что такое Page Object?
+# Что такое Page Object?
+Раздел №4 "Применение паттерна Page Object Model" на Stepik.org
