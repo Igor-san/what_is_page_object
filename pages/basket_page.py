@@ -1,11 +1,7 @@
 from .base_page import BasePage
 from .locators import BasketPageLocators
 
-
-class MainPage(BasePage):
-    def __init__(self, *args, **kwargs):
-        super(MainPage, self).__init__(*args, **kwargs)
-
+class BasketPage(BasePage):
     def should_not_be_items_in_basket(self):
         assert \
             self.is_not_element_present(*BasketPageLocators.BASKET_ITEMS), \
